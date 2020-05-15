@@ -1,0 +1,14 @@
+package com.example.demo.dto;
+
+import lombok.Data;
+
+
+@Data
+public class ResetPassword
+{
+	private String password;
+	private String confirmPassword;
+	
+	
+
+}
