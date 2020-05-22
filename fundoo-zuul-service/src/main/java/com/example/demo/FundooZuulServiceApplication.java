@@ -20,27 +20,26 @@ public class FundooZuulServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(FundooZuulServiceApplication.class, args);
-		
+
 	}
-	
+
 	@Bean
-	public PreFilter preFilter()
-	{
+	public PreFilter preFilter() {
 		return new PreFilter();
 	}
+
 	@Bean
-	public PostFilter postFilter()
-	{
+	public PostFilter postFilter() {
 		return new PostFilter();
 	}
+
 	@Bean
-	public ErrorFilter errorFilter()
-	{
+	public ErrorFilter errorFilter() {
 		return new ErrorFilter();
 	}
+
 	@Bean
-	public RouterFilter routerFilter()
-	{
+	public RouterFilter routerFilter() {
 		return new RouterFilter();
 	}
 

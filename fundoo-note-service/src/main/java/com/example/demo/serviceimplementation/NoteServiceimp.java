@@ -10,7 +10,6 @@ import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.example.demo.dto.NoteUpdateDto;
 import com.example.demo.dto.NotesDto;
 import com.example.demo.model.Notes;
-import com.example.demo.model.UserDetails;
 import com.example.demo.repository.NotesRepository;
 import com.example.demo.service.NoteService;
 

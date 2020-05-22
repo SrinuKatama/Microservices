@@ -28,8 +28,8 @@ public class UserService implements UserServe
 
 	@Autowired
 	private MailDto maildto;
-	@Autowired
-	MailUtility util;
+	
+	MailUtility util=new MailUtility() ;
 
 	@Autowired
 	private UserRepository userRepo;
