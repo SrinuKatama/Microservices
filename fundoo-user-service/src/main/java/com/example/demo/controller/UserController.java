@@ -56,7 +56,7 @@ public class UserController
 	
 	@GetMapping("/mailVerification")
 	@ApiOperation(value="for verification purpose")
-	public ResponseEntity<Responses> jwt(@PathVariable String token)
+	public ResponseEntity<Responses> jwt(@PathVariable String token) throws JWTVerificationException, IllegalArgumentException, Exception
 	{
 		UserDetails result=UserService.mailVerification(token);
 		if(result!=null)

@@ -14,7 +14,7 @@ public interface UserServe
 	UserDetails register(UserDto user) throws Exception;
 	UserDetails login(LoginDto login) throws UnsupportedEncodingException;
 	UserDetails forgetPasswod(String email) throws UnsupportedEncodingException;
-	UserDetails mailVerification(String token);
+	UserDetails mailVerification(String token) throws JWTVerificationException, IllegalArgumentException, Exception;
     boolean updatePassword(ResetPassword password,String token) throws JWTVerificationException, IllegalArgumentException, Exception;
     List<UserDetails> getAllusers(String str);
 	

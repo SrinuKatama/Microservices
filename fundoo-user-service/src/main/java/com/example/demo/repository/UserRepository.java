@@ -1,6 +1,7 @@
 package com.example.demo.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -23,7 +24,7 @@ public interface UserRepository extends JpaRepository<UserDetails, Long>
 //	
 	@Modifying
 	@Query(value="Update user set Isverified =true where ID=? ",nativeQuery = true)
-	void updateIsVeified(long id);
+	void updateIsVeified(Long id);
 	
 	@Modifying
 	@Query(value="Update user set Password=? where User_email=? ",nativeQuery = true)
