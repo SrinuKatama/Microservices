@@ -11,7 +11,6 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 
 
-
 @Entity
 @Table(name="user")
 public class UserDetails 
@@ -114,9 +113,13 @@ public class UserDetails
 	}
 
 	public UserDetails(Long id, @NotEmpty(message = "please fill with out blank") String firstname,
+
 			@NotEmpty(message = "please fill with out blank") String lastname,
+
 			@NotEmpty(message = "please fill with out blank") String useremail,
+
 			@NotEmpty(message = "please fill with out blank") String password,
+
 			@NotEmpty(message = "please fill with out blank") String mobileno) {
 		super();
 		this.id = id;
@@ -130,9 +133,6 @@ public class UserDetails
 	public UserDetails() {
 		super();
 	}
-	
-	
-	
 	
 
 }

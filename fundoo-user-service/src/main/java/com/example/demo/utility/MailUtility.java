@@ -1,12 +1,16 @@
 package com.example.demo.utility;
 
+import java.io.Serializable;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.stereotype.Component;
 
 import com.example.demo.dto.MailDto;
 
-public class MailUtility 
+@Component
+public class MailUtility implements Serializable
 {
 	@Autowired
 	JavaMailSender mailsender;

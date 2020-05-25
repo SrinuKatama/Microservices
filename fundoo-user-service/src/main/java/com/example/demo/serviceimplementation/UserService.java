@@ -41,7 +41,6 @@ public class UserService implements UserServe
 	@Autowired
 	private BCryptPasswordEncoder bCryptPasswordEncoder;
 
-	// private RabbitMqProducer sendMail;
 
 	@Autowired
 	private JWTutil jwt;
