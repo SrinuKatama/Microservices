@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.example.demo.dto.NoteUpdateDto;
@@ -13,8 +14,8 @@ import com.example.demo.model.Notes;
 import com.example.demo.repository.NotesRepository;
 import com.example.demo.service.NoteService;
 
+@Service
 public class NoteServiceimp implements NoteService {
-
 	Notes noteentity = new Notes();
 
 	@Autowired
